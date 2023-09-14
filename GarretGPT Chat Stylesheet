@@ -1,0 +1,298 @@
+/* This CSS rule sets the default font size of the entire document */
+html {
+  font-size: 12px;
+}
+
+/* These CSS rules sets the text direction of the paragraph (RTL or LTR) */
+p,
+.bpw-from-bot > div,
+#input-message {
+  direction: ltr;
+}
+
+/* This rule changes the color of the text in the input message */
+#input-message {
+  color: #ffffff;
+}
+
+/* Changes the color of the new message indicator */
+.bpw-new-messages-indicator {
+  background-color: #ffff9d;
+  color: #ffffff;
+}
+
+/* Styling for the chat header container */
+.bpw-header-container {
+  margin: 10px;
+  background: linear-gradient(135deg, #419cca, #0a1e2d);
+  border-radius: 10px;
+  position: relative;
+  overflow: hidden;
+  border: 1px;
+  border-radius: 10px;
+  color: #53f5d8;
+}
+
+.bpw-header-name{
+  color: #53f5d8;
+}
+
+/* Styling for the typing bubble */
+.bpw-typing-bubble {
+  background: #53f5d8;
+}
+
+/* Styling for the chat bubble content */
+.bpw-chat-bubble-content {
+  background-color: #f5f5f5;
+  border-radius: 3px;
+  border: 1px transparent;
+}
+
+/* Styling for the date container, header name, and header subtitle */
+.bpw-date-container,
+.bpw-header-name,
+.bpw-header-subtitle {
+  color: #9fdeff;
+}
+
+/* Styling for the layout of the chat bubble. Width, height, border, position and radius of the chat bubble */
+.bpw-layout {
+  width: 380px !important;
+  height: 72vh;
+  border-radius: 10px;
+  right: 5px;
+  bottom: 45px;
+  border: 1px;
+  background: linear-gradient(135deg, #419cca, #3681a8, #1d537f, #3681a8, #419cca, #3681a8);
+  background-size: 400% 400%;
+  animation: gradient-shift 10s infinite;
+}
+/* Responsive design rules for devices with width less than or equal to 767px */
+@media screen and (max-device-width: 767px) {
+  .bpw-layout {
+    width: 100% !important;
+    height: 100%;
+    right: 0;
+    bottom: 0;
+    border-radius: 0;
+  }
+}
+
+/* Changes the fill color of the header icons to white */
+.bpw-header-icon,
+.bpw-header-icon svg,
+.bpw-header-icon svg path {
+  fill: #9fdeff !important;
+}
+
+/* Changes the color of the placeholder text in the input message */
+#input-message::placeholder {
+  color: transparent;
+  background-image: linear-gradient(to right, #6edbff, #c6f0ff, #ffffff, #ffffff, #ffffff);
+  background-clip: text;
+  -webkit-background-clip: text;
+  color: transparent;
+}
+
+
+.bpw-composer textarea{
+  outline: none !important;
+  border: 1px solid rgba(0,0,0,.15);
+}
+.bpw-composer textarea:focus{
+  outline: none !important;
+  border: 1px solid rgba(0,0,0,.30);
+}
+
+/* Styling for the keyboard single choice option */
+.bpw-keyboard-single-choice {
+  background-color: linear-gradient(135deg, #3681a8, #419cca, #3681a8, #1d537f, #3681a8, #419cca);
+  border: none;
+}
+
+/* Styling for the buttons in the chat interface */
+.bpw-button,
+.bpw-button-alt {
+  background: linear-gradient(135deg, #1f4d6d, #195765, #1f4d6d, #134154, #1f4d6d, #195765);
+  color: #fdff8e;
+  border-radius: 8px;
+  border: none;
+  cursor: pointer;
+  transition: transform 0.8s ease-in-out;
+}
+
+/* Styling for hover effect on the buttons in the chat interface */
+.bpw-button:hover,
+.bpw-button-alt:hover {
+  transform: scale(1.2); /* Add a slight scale effect on hover */
+}
+
+/* Styling for hyperlinks in the chat interface */
+a {
+  color: #2ca9e7;
+  text-decoration: underline;
+}
+
+/* Styling for the chat container, including color, scrollbar width and color, and border */
+.bpw-chat-container {
+  background-color: rgba(255, 255, 255, 0.4); /* 40% transparent white */
+  scrollbar-width: thin;
+  scrollbar-color: #f5f5f5;
+  border: none;
+}
+
+/* Styling for the chat bubble content when it's from the bot */
+.bpw-from-bot .bpw-chat-bubble .bpw-chat-bubble-content {
+  background-color: #1d537f;
+  color: #c6f0ff;
+}
+
+/* Styling for the chat bubble content when it's from the user */
+.bpw-from-user .bpw-chat-bubble .bpw-chat-bubble-content {
+  background: linear-gradient(290deg, #1d537f, #419cca);
+  color: #ffffff;
+}
+
+
+/* Styling for the composer section of the chat interface */
+.bpw-composer {
+  background: linear-gradient(135deg, #419cca, #0a1e2d);
+  border-top: none;
+  border-radius: 0 0 15px 15px;
+}
+
+/* Styling for the scrollbar in the chat container */
+.bpw-chat-container::-webkit-scrollbar,
+.bpw-chat-container::-moz-scrollbar {
+  width: 10px;
+  background-color: rgba(255, 255, 255, 0.4); /* 40% transparent white */
+  border: none;
+}
+
+/* Styling for the avatar of the bot */
+.bpw-bot-avatar img,
+.bpw-bot-avatar svg {
+  background: #1d537f;
+  border: 1px solid #53f5d8;
+}
+
+/* Styling for the general scrollbar in the web page */
+::-webkit-scrollbar {
+  width: 0.0rem;
+}
+
+/* Styling for the track of the general scrollbar and the chat container scrollbar */
+::-webkit-scrollbar-track,
+.bpw-chat-container::-webkit-scrollbar-track,
+.bpw-chat-container::-moz-scrollbar-track {
+  background-color: transparent;
+}
+
+/* Styling for the thumb of the general scrollbar and the chat container scrollbar */
+::-webkit-scrollbar-thumb,
+.bpw-chat-container::-webkit-scrollbar-thumb,
+.bpw-chat-container::-moz-scrollbar-thumb {
+  background-color: #419cca;
+  border-radius: 1rem;
+  border: 0.5rem solid transparent;
+}
+
+/* Styling for the floating button icon in the chat interface */
+.bpw-floating-button i svg path {
+  fill: #53f5d8;
+}
+
+/* Styling for the 'powered by' section of the chat interface */
+.bpw-powered {
+  text-align: center;
+  padding: 10px;
+  color: #ffffff;
+  background: linear-gradient(135deg, #419cca, #3681a8, #1d537f, #3681a8, #419cca, #3681a8);
+  font-size: 18px;
+  border-bottom-right-radius: 10px;
+  border-bottom-left-radius: 10px;
+  font-style: italic; /* Add italics */
+  font-family: 'Your Custom Font', sans-serif; /* Replace 'Your Custom Font' with your desired font family */
+}
+
+
+/* Styling for the hyperlinks in the 'powered by' section of the chat interface */
+.bpw-powered a {
+  color: #53f5d8;
+  text-decoration: underline;
+}
+
+/* Styling for hover effect on the hyperlinks in the 'powered by' section of the chat interface */
+.bpw-powered a:hover {
+  text-decoration: underline;
+}
+
+.bpw-send-button{
+  background: #53f5d8;
+}
+
+/* Change Bot Widget Icon */
+
+.bpw-widget-btn{
+  border-radius: 50%;
+  background:#30c5fc;
+}
+
+.bpw-floating-button::before {
+background:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='none' viewBox='0 0 24 24' stroke-width='1.5' stroke='white' class='w-6 h-6'%3E%3Cpath stroke-linecap='round' stroke-linejoin='round' d='M8.625 12a.375.375 0 11-.75 0 .375.375 0 01.75 0zm0 0H8.25m4.125 0a.375.375 0 11-.75 0 .375.375 0 01.75 0zm0 0H12m4.125 0a.375.375 0 11-.75 0 .375.375 0 01.75 0zm0 0h-.375M21 12c0 4.556-4.03 8.25-9 8.25a9.764 9.764 0 01-2.555-.337A5.972 5.972 0 015.41 20.97a5.969 5.969 0 01-.474-.065 4.48 4.48 0 00.978-2.025c.09-.457-.133-.901-.467-1.226C3.93 16.178 3 14.189 3 12c0-4.556 4.03-8.25 9-8.25s9 3.694 9 8.25z' /%3E%3C/svg%3E");
+background-repeat: no-repeat;
+  background-position: center;
+background-size: contain;
+height:undefinedpx !important;
+width:undefinedpx !important;
+}
+
+.bpw-floating-button {
+  box-shadow: none !important;
+}
+
+.bpw-floating-button:hover {
+  box-shadow: none !important;
+}
+
+/* Animation for background color shift */
+@keyframes gradient-shift {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+/* Animation for chat bubble entry */
+.bpw-chat-bubble {
+  animation: pop 1s ease forwards; /* Use "forwards" to retain the final state of the animation */
+  transform-origin: center;
+  transform: scale(0); /* Start with 0 scale */
+  opacity: 0; /* Start with 0 opacity */
+  animation-fill-mode: forwards; /* Retain the final state of the animation */
+}
+
+@keyframes pop {
+  0% {
+    transform: scale(0);
+    opacity: 0;
+  }
+  70% {
+    transform: scale(1.2); /* Slight bounce effect */
+    opacity: 1;
+  }
+  100% {
+    transform: scale(1);
+    opacity: 1;
+  }
+}
+
+// .bpw-floating-button > i {
+// display: none;
+// }
