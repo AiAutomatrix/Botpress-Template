@@ -1,0 +1,48 @@
+# GarretGPT - Free Template by Ai Automatrix
+
+## Overview
+
+Welcome to GarretGPT, an advanced conversational AI template by Ai Automatrix. GarretGPT is designed to help you create hyper-smart AI chatbots with ease.
+
+## Features
+
+- **Hyper-Smart AI**: GarretGPT leverages state-of-the-art generative AI techniques to provide advanced conversation skills.
+- **Personalized Responses**: GarretGPT can address users by their name, creating engaging and personalized conversations.
+- **Contextual Conversation Training**: The template is structured to understand conversation flow and context, making interactions more coherent.
+- **Enhanced Natural Interaction**: GarretGPT acknowledges user inputs and responds appropriately, ensuring users feel understood.
+- **Knowledge Base**: GarretGPT includes a knowledge base with web search capabilities. It has a default GarretGPT Doc and allows you to add your own company documents for the bot to learn from.
+- **Table Usage**: The bot uses custom code to create rows in tables, extracting data from the conversation for your review.
+- **Feedback Loop**: GarretGPT features a built-in feedback loop. You can provide feedback to the AI bot, and it will save it to the table, update the knowledge base, and adjust its output accordingly.
+- **Chatbot Health Monitoring**: You can monitor the chatbot's health and status by typing 'status' in the chat at any time.
+
+## How to Use
+
+To use GarretGPT and experience its capabilities, follow these steps:
+
+1. **Download the Template**: Visit our GitHub repository and download the GarretGPT template file.
+   - [Download GarretGPT](link-to-download)
+
+2. **Set Up Botpress Studio**: If you haven't already, go to [Botpress Studio](https://botpress.com) and create a new chatbot project.
+
+3. **Import the Template**:
+   - Open your Botpress Studio project.
+   - Navigate to the "Content" section.
+   - Click on "Import a Flow" or similar option (the exact steps may vary depending on your Botpress version).
+   - Upload the GarretGPT template file you downloaded.
+
+4. **Start Testing**:
+   - Once imported, you can start interacting with GarretGPT in the chat interface.
+   - Type in your questions or prompts to engage with the AI and experience its advanced conversational abilities.
+   - To monitor the chatbot's health and status, simply type 'status' in the chat at any time.
+
+## Get Started
+
+Ready to create hyper-smart AI chatbots? Download GarretGPT now and elevate your conversational AI game!
+
+[Download GarretGPT](link-to-download)
+
+## Support
+
+For any questions or assistance, feel free to reach out to us at [contact-email].
+
+Happy Chatbot Building! 🤖🚀
